@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-balham.css';
+@import 'ag-grid-community/dist/styles/ag-theme-material.css';
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+
+.fm-row{
+  background: repeating-linear-gradient(45deg, beige, transparent 50px);
+  font-size: x-large;
+}

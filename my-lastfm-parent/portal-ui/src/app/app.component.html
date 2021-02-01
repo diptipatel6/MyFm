@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card bg-dark my-5">
+        <div class="card-body">
+          <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
+        </div>
+      </div>
+      <div class="col text-right" *ngIf="!selectedCountry">
+        <app-country-list id="country" #country [countryParam]="countryParam" ></app-country-list>
+      </div>
+      <div class="py-3" *ngIf="selectedCountry">
+        <div *ngIf="!loadTracks">
+          <h2 class="card-title text-center">Top Artist for Country: {{selectedCountry}}</h2>
+          <app-artist-list id="artists" #artists [params]="params" ></app-artist-list>
+        </div>
+        <div *ngIf="loadTracks">
+          <h2 class="card-title text-center py-3">Top Tracks for Artist: {{selectedArtist}}</h2>
+          <div class="col text-right">
+            <button class="btn btn-primary" (click)="onBackClick()">Back</button>
+          </div>
+          <app-artist-tracks id="tracks" #tracks></app-artist-tracks>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="card my-5">
+
+  <ag-grid-angular
+    class="ag-theme-material"
+    domLayout='autoHeight'
+    [rowData]="artistTracks"
+    [gridOptions]="gridOptions"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [pagination]="true"
+    [paginationPageSize]="20"
+    [frameworkComponents]="frameworkComponents">
+  </ag-grid-angular>
+
+</div>

@@ -1,0 +1,8 @@
+<div >
+  <h2 class="card-title text-center py-3">Please select Country to see popular artists</h2>
+  <select class="row col text-right" [(ngModel)]="selectedCountry" (change)="onSelection()">
+    <option *ngFor="let country of countryNames" [value]="country.name">
+      {{country.name}}
+    </option>
+  </select>
+</div>

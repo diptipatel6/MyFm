@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col">
+    <ag-grid-angular
+      class="ag-theme-material"
+      domLayout='autoHeight'
+      [rowData]="artistList"
+      [gridOptions]="gridOptions"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [pagination]="true"
+      [paginationPageSize]="20"
+      [frameworkComponents]="frameworkComponents">
+    </ag-grid-angular>
+  </div>
+</div>
